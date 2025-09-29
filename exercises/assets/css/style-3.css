@@ -12,7 +12,17 @@ img { width: 100%; height: auto }
 /* ============ CUSTOM PROPERTIES ============  */
 
 :root {
-
+ /* Color variables */
+ --blue-050: #ebf8ff;
+--blue-100: #bee3f8;
+--blue-200: #90cdf4;
+--blue-300: #63b3ed;
+--blue-400: #4299e1;
+--blue-500: #3182ce;
+--blue-600: #2b6cb0;
+--blue-700: #2c5282;
+--blue-800: #2a4365;
+--blue-900: #1A365D;
     /* Alternatives to default sans-serif font */
     --font-sans: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
 
@@ -77,23 +87,28 @@ section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 
 /* ============= TYPOGRAPHY ============ */
 
-body{ font-family: var(--font-serif);}
+body { 
+    background-color: var(--blue-900);
+    font-family: var(--font-serif);
+}
 h1 {
     font-size: var(--fs-xxxl);
     margin-top: 32px;
     margin-bottom: 16px;
     line-height: 1.2;
-    
+    color: var(--blue-100);
 }
 
 h2 {
     font-size: var(--fs-xl);
     line-height: 1.2;
     margin-bottom: 6px;
+    color: var(--blue-200);
+    
 }
 
 /* Applies only to h2 inside header */
-header h2 {font-weight: normal; font-style: italic;}
+header h2 {font-weight: normal; font-style: italic; color: var(--blue-050);}
 /* Applies only to h2 inside sectionss */
 section h2 {letter-spacing: -1px;}
 
@@ -101,7 +116,8 @@ p {
 	font-size: var(--fs-md);
     line-height: 1.7;
 	margin-bottom: 12px;
+    color: var(--blue-050);
 }
-
+a { color: var(--blue-200); }
 
 

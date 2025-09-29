@@ -81,7 +81,7 @@ section > * { max-width: 1600px }
 section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 
 /* ============= TYPOGRAPHY ============ */
-
+body { background-color: #7d3c98; }
 h1 {
     font-size: calc(var(--fs-xxxl) * 1.4);
     margin-top: 32px;
@@ -90,6 +90,7 @@ h1 {
     font-weight: normal;
     text-align: center;
     letter-spacing: -3px;
+    color: white;
 }
 
 h2 {
@@ -100,6 +101,7 @@ h2 {
     font-family: var(--font-serif);
     letter-spacing: -1px;
     text-transform: uppercase;
+    color: white;
 }
 
 p {
@@ -107,5 +109,6 @@ p {
     line-height: 1.7;
 	margin-bottom: 12px;
     font-family: var(--font-serif);
+    a { color: white;}
 }
 
