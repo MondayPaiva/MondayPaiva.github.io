@@ -1,0 +1,41 @@
+/* Add your custom styles here */
+
+/* Google Font */
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Hero title size */
+header h1 {
+  font-size: var(--font-size-xxxl);
+}
+
+/* Section background colours */
+.section-selector-1 {
+  background-color: var(--green-800);
+}
+
+.section-selector-2 {
+  background-color: var(--gray-200);
+}
+
+.section-selector-4 {
+  background-color: var(--green-800);
+}
+
+/* Icon colour in final section */
+.section-selector-4 div[class^="flex-cols-"] div[class^="col-"] figure.icon {
+  color: var(--white-000);
+}
+
+/* Links in dark deckhead */
+.theme-dark.section-selector-1 a:link,
+.theme-dark.section-selector-1 a:visited {
+  color: var(--green-200);
+}
+
+.theme-dark.section-selector-1 a:focus,
+.theme-dark.section-selector-1 a:hover,
+.theme-dark.section-selector-1 a:active {
+  color: var(--white-000);
+}

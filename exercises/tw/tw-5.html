@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tailwind Hero Header</title>
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="antialiased">
+
+  <!-- Header Hero Section -->
+  <header 
+    class="relative bg-cover bg-center bg-no-repeat min-h-[65vh] md:min-h-[75vh] lg:min-h-[85vh] flex items-center"
+    style="background-image: url('https://www.munnelly.com/dorset/projects-ui/project-smoothies/resources/smoothies-hero-image.jpg');"
+  >
+    <!-- Overlay for readability -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <!-- Content container -->
+    <div class="relative max-w-4xl mx-auto px-6 text-center text-white">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
+        Sample Heading Text
+      </h1>
+      <h2 class="mt-4 text-lg md:text-xl lg:text-2xl font-light tracking-wide">
+        Supporting sub-heading text goes here
+      </h2>
+    </div>
+  </header>
+  <main>
+
+    <!-- Watermelon Wonder -->
+    <section class="bg-rose-200">
+      <div class="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-2 items-center gap-10">
+        <div>
+          <h2 class="text-4xl font-semibold text-rose-900 mb-4">Watermelon Wonder</h2>
+          <p class="text-rose-950/80 leading-relaxed">
+            Watermelon is refreshing, hydrating and naturally sweet. Packed with
+            vitamin A, vitamin C and antioxidants, it’s a light pick that keeps you
+            going without weighing you down—perfect for a hot day or a post-workout
+            cool down.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <img class="max-w-md w-full"
+               src="/smoothies/assets/img/Watermelon Smoothies Portfolio.png"
+               alt="Sliced watermelon">
+        </div>
+      </div>
+    </section>
+  
+    <!-- Apple Delight (image left on md+) -->
+    <section class="bg-emerald-100">
+      <div class="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-2 items-center gap-10">
+        <div class="order-2 md:order-1 flex justify-center">
+          <img class="max-w-md w-full"
+               src="/smoothies/assets/img/apple.png"
+               alt="Green smoothie with spinach">
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="text-4xl font-semibold text-emerald-900 mb-4">Apple Delight</h2>
+          <p class="text-emerald-950/80 leading-relaxed">
+            Crisp apples bring fiber and vitamin C, while leafy greens add a fresh,
+            earthy balance. This bright blend is smooth, lightly sweet and a great
+            everyday option you can enjoy morning, noon, or post-gym.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Blueberry Surprise -->
+    <section class="bg-violet-500">
+      <div class="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-2 items-center gap-10">
+        <div>
+          <h2 class="text-4xl font-semibold text-white mb-4">Blueberry Surprise</h2>
+          <p class="text-violet-50/90 leading-relaxed">
+            Bursting with antioxidants and natural sweetness, blueberries pair
+            beautifully with creamy yogurt for a dessert-like smoothie that still
+            feels light. Great for a mid-afternoon pick-me-up.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <img class="max-w-md w-full"
+               src="/smoothies/assets/img/Blueberry Smoothies Portfolio.png"
+               alt="Blueberries in a bowl">
+        </div>
+      </div>
+    </section>
+  
+    <!-- Lemon Luxury (image left on md+) -->
+    <section class="bg-amber-100">
+      <div class="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-2 items-center gap-10">
+        <div class="order-2 md:order-1 flex justify-center">
+          <img class="max-w-md w-full"
+               src="/smoothies/assets/img/orange.png"
+               alt="Fresh lemons">
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="text-4xl font-semibold text-amber-900 mb-4">Lemon Luxury</h2>
+          <p class="text-amber-950/80 leading-relaxed">
+            Bright lemon zest with a hint of honey creates a clean, uplifting flavor.
+            It’s refreshing, lightly tart, and perfect when you want something vivid
+            and energizing without being overly sweet.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+</body>
+</html>
