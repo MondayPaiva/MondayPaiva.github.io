@@ -1,3 +1,222 @@
 /* Luan Paiva ID-75523 */
 
-header .col-text h2, .col-1 > h3 { line-height: 1.8 } 
+/* =========================
+   ICE BLUE LIGHT THEME (clean + readable)
+========================= */
+:root{
+  /* Backgrounds */
+  --bg: #D7FCFC;          /* ice blue */
+  --bg-2: #D4FEFF;        /* section alt */
+  --card: #FFFFFF;
+
+  /* Borders + shadow */
+  --stroke: #D9E3FF;
+  --shadow: 0 14px 30px rgba(15, 23, 42, .10);
+
+  /* Text */
+  --text: #0B1220;        /* near-black */
+  --muted: #334155;       /* slate */
+  --muted-2: #475569;
+
+  /* Accents */
+  --accent: #3B82F6;      /* blue */
+  --accent-2: #14B8A6;    mint/teal
+
+  --radius: 16px;
+}
+
+html, body { height: 100%; }
+
+body{
+  background:
+    radial-gradient(900px 520px at 14% 8%, rgba(59,130,246,.14), transparent 60%),
+    radial-gradient(750px 520px at 86% 12%, rgba(20,184,166,.10), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Readability */
+header .col-text h2,
+.col-1 > h3 { line-height: 1.85
+; }
+
+/* =========================
+   Force theme-light to behave like LIGHT (fix conflicts)
+========================= */
+.theme-light{ background: transparent !important; color: var(--text) !important; }
+.theme-light h1, .theme-light h2, .theme-light h3{ color: var(--text) !important; }
+.theme-light p, .theme-light .col-text h2, .theme-light .col-1 > h3{
+  color: var(--muted) !important;
+}
+
+/* Links */
+a{ color: var(--accent) !important; text-decoration: none; }
+a:hover{ color: #1D4ED8 !important; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Focus */
+a:focus-visible, .btn:focus-visible{
+  outline: 3px solid rgba(59,130,246,.35);
+  outline-offset: 3px;
+  border-radius: 14px;
+}
+
+/* =========================
+   NAV (light, clean)
+========================= */
+nav.theme-light{
+  background: rgba(245,248,255,.78) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--stroke);
+}
+nav.theme-light a{ color: rgba(11,18,32,.88) !important; }
+nav.theme-light a:hover{ color: #0B1220 !important; }
+
+/* Hamburger bars (mobile) */
+.nav-toggle .bar-1, .nav-toggle .bar-2, .nav-toggle .bar-3{
+  background: rgba(11,18,32,.70) !important;
+}
+
+/* CTA in nav */
+#btn-cta{
+  border-radius: 999px !important;
+  border: 1px solid var(--stroke) !important;
+  background: rgba(59,130,246,.08) !important;
+}
+#btn-cta:hover{
+  background: rgba(59,130,246,.12) !important;
+}
+
+/* =========================
+   HERO (subtle card)
+========================= */
+header.theme-light{
+  padding-top: 3.2rem;
+  padding-bottom: 2.2rem;
+}
+
+header .badge{
+  background: rgba(59,130,246,.10) !important;
+  border: 1px solid rgba(59,130,246,.18) !important;
+  color: #0B1220 !important;
+  border-radius: 999px !important;
+  padding: .45rem .85rem !important;
+  letter-spacing: .08em;
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+/* Hero image frame */
+header .col-visual figure{
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--stroke);
+  box-shadow: var(--shadow);
+  background: #fff;
+}
+header .col-visual img{
+  transform: scale(1.01);
+  transition: transform .55s ease;
+}
+header .col-visual figure:hover img{
+  transform: scale(1.05);
+}
+
+/* =========================
+   SECTION heading (clean)
+========================= */
+section.theme-light.section-selector-1{
+  background: transparent !important;
+  padding-top: 2.2rem;
+  padding-bottom: 3rem;
+}
+
+section.theme-light.section-selector-1 .col-1{
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+section.theme-light.section-selector-1 .col-1 h3{
+  max-width: 78ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================
+   PROJECT CARDS (light)
+========================= */
+.flex-cols-3 .col-3{
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: 22px;
+  padding: 1.15rem 1.15rem 1.3rem;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, .08);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.flex-cols-3 .col-3:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, .12);
+  border-color: rgba(59,130,246,.28);
+}
+
+.flex-cols-3 figure{
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, .10);
+  background: #fff;
+}
+
+.flex-cols-3 .col-3 p{
+  color: var(--muted-2) !important;
+}
+
+/* =========================
+   BUTTONS (blue / gradient)
+========================= */
+.btn{
+  border-radius: 12px !important;
+  font-weight: 700;
+  transition: transform .16s ease, box-shadow .16s ease, background-color .16s ease, border-color .16s ease;
+}
+
+/* Primary (subtle gradient) */
+.btn.btn-solid.btn-soft{
+  background: linear-gradient(135deg, rgba(59,130,246,.95), rgba(20,184,166,.78)) !important;
+  border: 1px solid rgba(15, 23, 42, .10) !important;
+  color: #07101e !important;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, .12);
+}
+.btn.btn-solid.btn-soft:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, .16);
+}
+
+/* Secondary outline */
+.btn.btn-outline.btn-soft{
+  background: #fff !important;
+  border: 1px solid var(--stroke) !important;
+  color: var(--text) !important;
+}
+.btn.btn-outline.btn-soft:hover{
+  transform: translateY(-2px);
+  border-color: rgba(59,130,246,.32) !important;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, .10);
+}
+
+/* =========================
+   FOOTER (light but separated)
+========================= */
+footer.theme-dark{
+  background: rgba(238,244,255,.95) !important;
+  border-top: 1px solid var(--stroke);
+  color: var(--text) !important;
+}
+footer.theme-dark h2, footer.theme-dark h3{ color: var(--text) !important; }
+footer.theme-dark h3{ opacity: .78; }
+footer.theme-dark a{ color: rgba(11,18,32,.85) !important; }
+footer.theme-dark a:hover{ color: #0B1220 !important; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{ transition: none !important; animation: none !important; }
+}
